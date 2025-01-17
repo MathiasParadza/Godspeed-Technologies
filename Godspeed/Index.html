@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Godspeed Technologies - Digital transformation for businesses">
+  <meta name="keywords" content="Software Development, Web Development, Mobile App Development, Cybersecurity, IT Consulting, Data Analytics">
+  <meta name="author" content="Godspeed Technologies">
+  <title>Godspeed Technologies</title>
+  <!--card stack new cdn-->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!--overview swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!--round menu link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!-- Link to custom stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!--services slider-->
+ 
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar navbar-expand-lg navbar-transparent fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="" class="me-2" style="height: 40px;">
+        <span>Godspeed Technologies</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#branches">Branches</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+  </header>
+  <!-- Home Section -->
+  <section id="home" class="page-title text-center text-white" style="background-image: url('images/home2.jpg'); height: 100vh; background-position: center; background-size: cover;">
+    <div class="container d-flex flex-column justify-content-center align-items-center h-100 text-center">
+      <h1 class="display-1 text-white animate__animated animate__fadeIn">
+        <span class="highlight">GODSPEED TECHNOLOGIES</span>
+      </h1>
+      <h3 class="display-5 text-light mt-3 animate__animated animate__fadeIn animate__delay-1s">
+        Innovating your digital future with <span class="highlight">cutting-edge</span> technology solutions
+      </h3>
+    </div>
+    
+    
+     <!-- Popup Ad -->
+<div id="popupAd" class="popup">
+  <div class="popup-content text-center">
+    <button class="close-btn" onclick="closePopup()">×</button>
+    <h2>how can we help?</h2>
+    <p class="lead mb-3">Need to add your business to the cloud?</p>
+    <a href="#overview" class="btn btn-primary btn-sm mb-3">Learn More</a>
+    <p class="lead mb-3">Looking for custom software development?</p>
+    <a href="#services" class="btn btn-primary btn-sm mb-3">Get Started</a>
+    <p class="lead mb-3">Enhance security with robust cybersecurity solutions.</p>
+    <a href="#services" class="btn btn-primary btn-sm mb-3">Explore</a>
+  </div>
+</div>
+
+  </section>
+  <!--discover with doodles-->
+  <section id="discover" class="py-5 text-white text-center">
+    <div class="container position-relative">
+      <h2 class="display-4 mb-4 animate__animated animate__fadeInDown">Discover The Power of Technology</h2>
+      <p class="lead mb-5 animate__animated animate__fadeInUp">
+        Unleashing the power of technology to transform your business into a digital powerhouse.
+      </p>
+      <p class="lead mb-5 animate__animated animate__fadeInUp">
+        Technology is the backbone of modern innovation, shaping the way we live, work, and connect. At Godspeed Technologies, we embrace the limitless potential of tech to drive transformation and unlock opportunities for growth. From cutting-edge software development to robust cybersecurity solutions, we harness the power of innovation to empower businesses and individuals alike. With a focus on scalability, efficiency, and creativity, our goal is to lead the digital revolution and build a smarter, more connected world for generations to come.
+      </p>
+  
+      <!-- Tech Doodles -->
+      <div class="tech-doodles">
+        <img src="images/tech (1).jpg" alt="Doodle 1" class="doodle doodle-1">
+        <img src="images/tech (2).jpg" alt="Doodle 2" class="doodle doodle-2">
+        <img src="images/tech (3).jpg" alt="Doodle 3" class="doodle doodle-3">
+        <img src="images/tech (4).jpg" alt="Doodle 4" class="doodle doodle-4">
+      </div>
+  
+      <!-- Call to Action Button -->
+      <a href="#services" class="btn btn-primary btn-lg mt-4 animate__animated animate__pulse">
+        Get started
+      </a>
+    </div>
+  </section>
+  
+ 
+  <!--services sections-->
+  <section class="services py-5" id="services">
+    <div class="container">
+      <h2 class="text-center mb-4">Services Offered</h2>
+      <!-- Swiper Slider -->
+      <div class="swiper services-swiper">
+        <div class="swiper-wrapper">
+          <!-- Service Slide 1 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="images/software.jpg" class="card-img-top" alt="Cloud Solutions">
+                <i class="lucide-software"></i>
+                <h5 class="card-title">Software Development</h5>
+                <p class="card-text">Custom software solutions tailored to client needs.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Service Slide 2 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="images/webdev.jpg" class="card-img-top" alt="Cloud Solutions">
+                <i class="lucide-web"></i>
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Responsive and dynamic web applications.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Service Slide 3 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="images/mobile.jpg" class="card-img-top" alt="Cloud Solutions">
+                <i class="lucide-web"></i>
+                <h5 class="card-title">Mobile App Development</h5>
+                <p class="card-text">iOS and Android app creation.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Service Slide 4 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-body text-center">
+                <img src="images/cyberp.jpg" class="card-img-top" alt="Cloud Solutions">
+                <i class="lucide-web"></i>
+                <h5 class="card-title">Cybersecurity</h5>
+                <p class="card-text">Robust security measures and threat prevention.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more slides for other services -->
+        </div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Swiper Navigation Buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <!--blog section-->
+  <section class="blog py-5" id="blog">
+    <div class="container">
+      <h2 class="text-center mb-4">Latest from Our Blog</h2>
+      <p class="text-center text-muted mb-5">Stay updated with the latest trends and insights in technology and innovation.</p>
+      <div class="row">
+        <!-- Blog Post 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/emerging.jpg" class="card-img-top" alt="Blog Title 1">
+            <div class="card-body">
+              <h5 class="card-title">Emerging Trends in AI</h5>
+              <p class="card-text text-muted">Discover how artificial intelligence is shaping industries and transforming the future of business.</p>
+              <a href="#" class="btn btn-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/cybersec.jpg" class="card-img-top" alt="Blog Title 2">
+            <div class="card-body">
+              <h5 class="card-title">Cybersecurity in 2025</h5>
+              <p class="card-text text-muted">Learn about the latest threats and strategies to safeguard your digital assets.</p>
+              <a href="#" class="btn btn-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/cloudcom.jpg" class="card-img-top" alt="Blog Title 3">
+            <div class="card-body">
+              <h5 class="card-title">The Power of Cloud Computing</h5>
+              <p class="card-text text-muted">Explore how businesses are leveraging the cloud for scalability and innovation.</p>
+              <a href="#" class="btn btn-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--news later-->
+<section id="email-section" class="email-section py-5 text-center">
+  <div class="container">
+    <h2 class="section-title mb-4">Stay Updated with Godspeed Technologies</h2>
+    <p class="section-subtitle mb-4">
+      Subscribe to our newsletter and receive the latest updates, news, and exclusive offers directly to your inbox.
+    </p>
+    <form class="email-form d-flex justify-content-center align-items-center">
+      <input
+        type="email"
+        class="form-control me-2"
+        placeholder="Enter your email address"
+        required
+      />
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </div>
+</section>
+  </section>
+  
+ 
+<!--products secton-->
+  <section class="products py-5" id="products">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Products</h2>
+      <p class="text-center text-muted mb-5">Explore our innovative and cutting-edge solutions designed to drive your business forward.</p>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card product-card">
+            <img src="images/product1.jpg" alt="Product 1" class="card-img-top product-image">
+            <div class="card-body">
+              <h5 class="card-title">Xyreod GFx </h5>
+              <p class="card-text">A 360 Multi-Media Googles, equiped with wires Video and Audio .</p>
+              <a href="#product1-details" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card product-card">
+            <img src="images/product2.jpg" alt="Product 2" class="card-img-top product-image">
+            <div class="card-body">
+              <h5 class="card-title">Wyomiong Gxv Hand Watch</h5>
+              <p class="card-text">A Multi-Media watch Hand Watch Equiped Gaming,Screen Projection and Video Capabilities.</p>
+              <a href="#product2-details" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card product-card">
+            <img src="images/product3.jpg" alt="Product 3" class="card-img-top product-image">
+            <div class="card-body">
+              <h5 class="card-title">Hand Drone Controller</h5>
+              <p class="card-text">A Hand Glove Equiped with Six Drones, Provides Resolution Photgraphy and Video Shoot, also used for Aerial Gaming.</p>
+              <a href="#product3-details" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </div>
+  </section>
+  
+ <!-- Our Branches Section -->
+ <section class="branches py-5" id="branches">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Branches</h2>
+    <div class="row">
+      <!-- Branch Cards -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="images/lusaka.jpg" class="card-img-top" alt="Zambia">
+            <i class="lucide-map-pin"></i>
+            <h5 class="card-title">Zambia (Lusaka)</h5>
+            <p class="card-text">123 Trades building Cairo Rd, Lusaka</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="images/birmingham.jpg" class="card-img-top" alt="united kingdom">
+            <i class="lucide-map-pin"></i>
+            <h5 class="card-title">United Kingdom (Birmingham)</h5>
+            <p class="card-text">456 Central Square Rd,Birmingham </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="images/dubai.jpg" class="card-img-top" alt="united arab Emirates">
+            <i class="lucide-map-pin"></i>
+            <h5 class="card-title">United Arab Emirates (Dubai)</h5>
+            <p class="card-text">478 Equadr Se ot Rd,Dubai </p>
+          </div>
+        </div>
+      </div>
+      <!-- Add other branch cards for Livingstone, Kasama, Mongu -->
+    </div>
+  </div>
+</section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Vision Section -->
+        <div class="col-md-6 text-center">
+          <div class="p-4 shadow-lg bg-white rounded">
+            <h2 class="display-5 text-primary mb-3">Our Vision</h2>
+            <p class="lead text-muted">
+              To be a global leader in driving technological innovation, empowering businesses to achieve limitless possibilities through cutting-edge solutions.
+            </p>
+          </div>
+        </div>
+        <!-- Mission Section -->
+        <div class="col-md-6 text-center">
+          <div class="p-4 shadow-lg bg-white rounded">
+            <h2 class="display-5 text-primary mb-3">Our Mission</h2>
+            <p class="lead text-muted">
+              To provide innovative, scalable, and secure technology solutions tailored to meet the evolving needs of our clients, fostering sustainable growth and success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ <!--about us section-->
+ <section class="about-us py-5" id="about">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="row align-items-center">
+      <!-- Founder Photo -->
+      <div class="col-md-4 text-center">
+        <img src="images/profile.jpg" alt="Mathias Paradza" class="img-fluid rounded-circle shadow" style="width: 200px; height: 200px;">
+      </div>
+      <!-- About Content -->
+      <div class="col-md-8">
+        <h3 class="mb-3">Our Story</h3>
+        <p>
+          Godspeed Technologies was founded with a vision to revolutionize the tech landscape by providing cutting-edge solutions tailored to modern business challenges. Since its inception, the company has been at the forefront of innovation, helping businesses harness the power of technology to grow and succeed.
+        </p>
+        <p>
+          Our journey began with a dream to make advanced technology accessible and effective for businesses of all sizes. Today, we continue to push boundaries and deliver exceptional value to our clients worldwide.
+        </p>
+        <h3 class="mb-3">About Our Founder</h3>
+        <p>
+          <strong>Mathias Paradza</strong>, the visionary behind Godspeed Technologies, is a passionate entrepreneur with a deep love for technology and innovation. With years of experience in software development and IT consulting, Mathias founded the company to turn bold ideas into impactful solutions. His leadership and commitment to excellence have been the driving force behind Godspeed Technologies' success.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+  <!--clients section-->
+<section class="clients py-5" id="clients">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Clients & Partners</h2>
+    <p class="text-center text-muted mb-5">We are proud to collaborate with industry leaders and innovators across the globe.</p>
+    <div class="row justify-content-center">
+      <!-- Client/Partner Logo 1 -->
+      <div class="col-md-2 col-6 mb-4 text-center">
+        <img src="images/mobiletech.jpg" alt="Client 1" class="client-logo img-fluid">
+        <p class="mt-2 small">Mobile Tech</p>
+      </div>
+      <!-- Client/Partner Logo 2 -->
+      <div class="col-md-2 col-6 mb-4 text-center">
+        <img src="images/motion.jpg" alt="Client 2" class="client-logo img-fluid">
+        <p class="mt-2 small">Motion</p>
+      </div>
+      <!-- Client/Partner Logo 3 -->
+      <div class="col-md-2 col-6 mb-4 text-center">
+        <img src="images/infinity.png" alt="Client 3" class="client-logo img-fluid">
+        <p class="mt-2 small">Infinity</p>
+      </div>
+      <!-- Client/Partner Logo 4 -->
+      <div class="col-md-2 col-6 mb-4 text-center">
+        <img src="images/techdeal.jpg" alt="Client 4" class="client-logo img-fluid">
+        <p class="mt-2 small">Tech Deal</p>
+      </div>
+      <!-- Client/Partner Logo 5 -->
+      <div class="col-md-2 col-6 mb-4 text-center">
+        <img src="images/creative.jpg" alt="Client 5" class="client-logo img-fluid">
+        <p class="mt-2 small">Creative Solutions</p>
+      </div>
+      <!-- Add more logos as needed -->
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section class="contact py-5" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">Reach out to us for any inquiries or quotes</p>
+        <form action="/submit-form" method="POST" class="contact-form mx-auto">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter the subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+      
+    
+  </section>
+<!--thank you-->
+  <section id="thank-you" class="thank-you-section text-center py-5">
+    <div class="container">
+      <h2 class="display-4 mb-4">Thank You for Visiting!</h2>
+      <p class="lead mb-5">
+        We’re here to assist you. Feel free to reach out to us at the following emails:
+      </p>
+      <div class="emails d-flex justify-content-center flex-wrap">
+        <div class="email-card mx-3 my-2 p-3">
+          <h5>General Inquiries</h5>
+          <a href="mailto:info@godspeedtech.com" class="email-link">info@godspeedtech.com</a>
+        </div>
+        <div class="email-card mx-3 my-2 p-3">
+          <h5>Support</h5>
+          <a href="mailto:support@godspeedtech.com" class="email-link">support@godspeedtech.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <!-- Call to Action Button -->
+    <div class="social-menu text-center mt-4">
+      <h2 class="text-center mb-4">Follow Us On</h2>
+      <ul class="d-inline-flex justify-content-center p-0 m-0">
+        <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+
+    <p>&copy; 2025 Godspeed Technologies.</p>
+  </footer>
+
+<!--swiper-->
+<script>
+   const swiper = new Swiper('.card-stack-swiper', {
+  effect: 'cards',
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+const servicesSwiper = new Swiper('.services-swiper', {
+    loop: true, // Enables looping through slides
+    autoplay: {
+      delay: 3000, // Auto-slide every 3 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1, // Number of slides to show
+    spaceBetween: 20, // Space between slides in px
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+
+
+   // Show the popup when the page loads
+   window.onload = function () {
+    setTimeout(() => {
+      document.getElementById('popupAd').classList.add('show');
+    }, 1000); // Delay for 1 second
+  };
+
+  // Close the popup
+  function closePopup() {
+    document.getElementById('popupAd').classList.remove('show');
+  }
+  </script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Bootstrap JS and Lucide Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/@lucide/icons/dist/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
