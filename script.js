@@ -1,4 +1,4 @@
-// Godspeed Technologies – site scripts
+// Goodspeed Technologies – site scripts
 
 // Address that contact and newsletter requests are sent to.
 // To use a form service instead (e.g. Formspree), set FORM_ENDPOINT to its URL.
@@ -23,17 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         768: { slidesPerView: 2, spaceBetween: 30 },
         1024: { slidesPerView: 3, spaceBetween: 40 },
       },
-    });
-  }
-
-  // ---- "Read more" for the long Discover paragraph (phones only) ----
-  const readMore = document.querySelector('.read-more');
-  const discoverText = document.getElementById('discoverText');
-  if (readMore && discoverText) {
-    readMore.addEventListener('click', () => {
-      const expanded = discoverText.classList.toggle('expanded');
-      readMore.setAttribute('aria-expanded', String(expanded));
-      readMore.textContent = expanded ? 'Read less' : 'Read more';
     });
   }
 
@@ -129,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     newsletterForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = new FormData(newsletterForm).get('email');
-      submitForm(newsletterForm, 'Newsletter subscription', `Please subscribe ${email} to the Godspeed Technologies newsletter.`);
+      submitForm(newsletterForm, 'Newsletter subscription', `Please subscribe ${email} to the Goodspeed Technologies newsletter.`);
     });
   }
 });
