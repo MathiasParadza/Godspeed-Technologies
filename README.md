@@ -31,6 +31,6 @@ One-time setup: **Settings → Pages → Build and deployment → Source: GitHub
 ## Forms
 
 GitHub Pages has no server, so the contact and newsletter forms open the visitor's
-email app with the message pre-filled (to `info@godspeedtech.com`). To receive
+email app with the message pre-filled (to `info@goodspeedtech.com`). To receive
 submissions directly instead, create a form on a service such as
 [Formspree](https://formspree.io) and set `FORM_ENDPOINT` at the top of `script.js`.

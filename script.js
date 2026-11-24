@@ -2,7 +2,7 @@
 
 // Address that contact and newsletter requests are sent to.
 // To use a form service instead (e.g. Formspree), set FORM_ENDPOINT to its URL.
-const CONTACT_EMAIL = 'info@godspeedtech.com';
+const CONTACT_EMAIL = 'info@goodspeedtech.com';
 const FORM_ENDPOINT = '';
 
 document.addEventListener('DOMContentLoaded', () => {
