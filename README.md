@@ -2,7 +2,7 @@
 
 Company website for Goodspeed Technologies — a static, single-page site built with HTML, CSS, Bootstrap 5 and Swiper.
 
-**Live site:** https://mathiasparadza.github.io/Godspeed-Technologies/
+**Live site:** https://mathiasparadza.github.io/Goodspeed-Technologies/
 
 ## Structure
 
