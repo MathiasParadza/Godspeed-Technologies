@@ -26,6 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---- "Read more" for the long Discover paragraph (phones only) ----
+  const readMore = document.querySelector('.read-more');
+  const discoverText = document.getElementById('discoverText');
+  if (readMore && discoverText) {
+    readMore.addEventListener('click', () => {
+      const expanded = discoverText.classList.toggle('expanded');
+      readMore.setAttribute('aria-expanded', String(expanded));
+      readMore.textContent = expanded ? 'Read less' : 'Read more';
+    });
+  }
+
   // ---- Close the mobile menu after picking a link ----
   const navCollapse = document.getElementById('navbarNav');
   if (navCollapse && window.bootstrap) {
