@@ -38,35 +38,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- "How can we help?" popup: shown once per browser session ----
+  // ---- "How can we help?" popup ----
+  // Slides in on the right of the hero, stays for a few seconds, then fades out.
+  // Hovering over it (or tabbing into it) keeps it open.
   const popup = document.getElementById('popupAd');
-  const storage = {
-    get(key) { try { return sessionStorage.getItem(key); } catch (e) { return null; } },
-    set(key, value) { try { sessionStorage.setItem(key, value); } catch (e) { /* ignore */ } },
-  };
+  const SHOW_AFTER_MS = 1500;
+  const VISIBLE_FOR_MS = 6000;
+  let hideTimer = null;
 
-  function openPopup() {
-    popup.classList.add('show');
-    popup.setAttribute('aria-hidden', 'false');
-    popup.querySelector('.close-btn').focus();
-  }
-
-  function closePopup() {
+  function hidePopup() {
+    clearTimeout(hideTimer);
     popup.classList.remove('show');
     popup.setAttribute('aria-hidden', 'true');
-    storage.set('gs-popup-seen', '1');
+  }
+
+  function scheduleHide() {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(hidePopup, VISIBLE_FOR_MS);
+  }
+
+  function showPopup() {
+    popup.classList.add('show');
+    popup.setAttribute('aria-hidden', 'false');
+    scheduleHide();
   }
 
   if (popup) {
-    popup.querySelector('.close-btn').addEventListener('click', closePopup);
-    popup.addEventListener('click', (e) => {
-      // Close when clicking the backdrop or any link inside the popup
-      if (e.target === popup || e.target.closest('a')) closePopup();
+    popup.querySelector('.close-btn').addEventListener('click', hidePopup);
+    popup.querySelectorAll('a').forEach((a) => a.addEventListener('click', hidePopup));
+    popup.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+    popup.addEventListener('focusin', () => clearTimeout(hideTimer));
+    popup.addEventListener('mouseleave', () => { if (popup.classList.contains('show')) scheduleHide(); });
+    popup.addEventListener('focusout', (e) => {
+      if (!popup.contains(e.relatedTarget) && popup.classList.contains('show')) scheduleHide();
     });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && popup.classList.contains('show')) closePopup();
-    });
-    if (!storage.get('gs-popup-seen')) setTimeout(openPopup, 1500);
+    setTimeout(showPopup, SHOW_AFTER_MS);
   }
 
   // ---- Forms ----
