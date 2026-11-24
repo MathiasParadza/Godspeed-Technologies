@@ -276,7 +276,7 @@ section h2::after {
   #home {
     min-height: max(65vh, 520px);
     min-height: max(65svh, 520px);
-    margin-bottom: 0;
+    margin-bottom: 40px; /* space before Discover */
   }
 
   #discover {
