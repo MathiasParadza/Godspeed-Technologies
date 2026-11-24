@@ -1,6 +1,8 @@
 # Goodspeed Technologies
 
-Company website for Goodspeed Technologies — a static, single-page site built with HTML, CSS, Bootstrap 5 and Swiper.
+> **Demo project.** This is a practice website for a fictional company. Goodspeed Technologies is not a real business, and the offices, email addresses, clients and products on the site are examples.
+
+A responsive, single-page company website built with HTML, CSS, Bootstrap 5 and Swiper.
 
 **Live site:** https://mathiasparadza.github.io/Goodspeed-Technologies/
 

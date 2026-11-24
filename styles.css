@@ -571,6 +571,15 @@ footer p {
   font-size: 1rem;
 }
 
+footer .demo-note {
+  max-width: 640px;
+  margin: 8px auto 0;
+  padding: 0 16px;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #444;
+}
+
 .social-menu ul {
   list-style: none;
   margin: 0;
