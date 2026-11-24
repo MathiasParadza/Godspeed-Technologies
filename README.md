@@ -7,25 +7,25 @@ Company website for Godspeed Technologies — a static, single-page site built w
 ## Structure
 
 ```
-./
-index.html   # the page
-styles.css   # site styles
-script.js    # slider, popup, mobile menu and form handling
-images/      # all images used by the page
-.github/workflows/pages.yml   # deploys the site to GitHub Pages
+Godspeed/
+  index.html   # the page
+  styles.css   # site styles
+  script.js    # slider, popup, mobile menu and form handling
+  images/      # all images used by the page
+.github/workflows/pages.yml   # deploys Godspeed/ to GitHub Pages
 ```
 
 ## Running locally
 
-Open `index.html` in a browser, or serve the folder:
+Open `Godspeed/index.html` in a browser, or serve the folder:
 
 ```bash
-python3 -m http.server 8000
+cd Godspeed && python3 -m http.server 8000
 ```
 
 ## Deployment
 
-Every push to `main` publishes the site to GitHub Pages via GitHub Actions.
+Every push to `main` publishes the `Godspeed/` folder to GitHub Pages via GitHub Actions.
 One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 ## Forms
